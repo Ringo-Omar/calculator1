@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laskin</title>
+    <link rel="stylesheet" href="laskinStyle.css">
+</head>
+<body>
+    <div class="wrapper"> <!--kaikki sivun sisältö näkyy tämän ikkunan sisällä-->
+        <div class="banner">
+            <h1 class="otsikko">Pikku Professori</h1>
+        </div>
+        <div id="laskin"> <!--laskin osuus 4 riviä joista ylimmässä 2 nappia, ja muissa 3.-->
+            <div class="input" id="input"></div>
+
+            <button class="operator" id="plus" onclick='add("+")'>+</button>
+            <button class="operator" id="minus" onclick='add("-")'>-</button>
+
+            <button class="numbers first" id="seven" onclick="add(7)">7</button>
+            <button class="numbers second" id="eight" onclick="add(8)">8</button>
+            <button class="numbers third" id="nine" onclick="add(9)">9</button>
+            <button class="numbers first" id="four" onclick="add(4)">4</button>
+            <button class="numbers second" id="five" onclick="add(5)">5</button>
+            <button class="numbers third" id="six" onclick="add(6)">6</button>
+            <button class="numbers first" id="one" onclick="add(1)">1</button>
+            <button class="numbers second" id="two" onclick="add(2)">2</button>
+            <button class="numbers third" id="three" onclick="add(3)">3</button>
+
+            <button class="numbers first" id="zero" onclick="add(0)">0</button>
+            <button id="clear" class="second" onclick="clear1()">C</button>
+            <button class= "equals third" id="result" onclick="laske()">=</button>
+        </div>
+    </div>
+
+    <!--Lisäosa jossa piste, kertomis ja jako merkit-->
+    <div class="wrapper">
+        <div class="banner">
+            <h1 class="otsikko">Lisäosa</h1>
+        </div>
+        <div id="laskin2">
+            <button class="lisäosaButton" onclick='add(".")'>&sdot;</button>
+            <button class="lisäosaButton" onclick='add("*")'>&times;</button>
+            <button class="lisäosaButton" onclick='add("/")'>&divide;</button>
+        </div>
+
+    </div>
+</body>
+<script src="laskinApp.js"></script>
+</html>
